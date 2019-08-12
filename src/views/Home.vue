@@ -1,29 +1,18 @@
 <template>
   <div class="home">
-    {{ info }}
+    <h1>Esta é a página de início.</h1>
+    <Service />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Inicio from '@/components/Inicio.vue'
-
-import axios from 'axios'
+import Service from '@/components/Service.vue'
 
 export default {
   name: 'home',
   components: {
-    Inicio
-  },
-  data () {
-    return {
-      info: null
-    }
-  },
-  mounted () {
-    axios
-      .get(`https://klaytonfantin.dev/wp-json/api/v1/servicos`)
-      .then(response => (this.info = response.data))
+    Service
   }
 }
 </script>

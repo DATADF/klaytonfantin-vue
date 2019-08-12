@@ -1,14 +1,13 @@
 <template>
   <div>
-    <h1>Esta é a página de início.</h1>
-    <p>{{ info }}</p>
+    <p>Componente Serviços</p>
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'Inicio',
+  name: 'Service'
 }
 </script>
 
