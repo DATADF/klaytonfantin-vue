@@ -4,7 +4,6 @@
       <h1>{{ trabalho.titulo }} - {{ trabalho.id }}</h1>
       <img :src="trabalho.imagem" :alt="trabalho.titulo" :key="trabalho.slug">
       <p>{{ trabalho.resumo }}</p>
-        <router-link :to="`/trabalho/${trabalho.slug}`">{{ trabalho.titulo }}</router-link>
     </article>
   </div>
 </template>
