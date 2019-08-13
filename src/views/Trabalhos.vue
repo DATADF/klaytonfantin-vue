@@ -1,9 +1,10 @@
 <template>
   <div class="trabalhos">
-    <article v-for="trabalho of trabalhos" :key="trabalho.slug">
+    <article v-for="trabalho of trabalhos" :key="trabalho.id">
       <h1>{{ trabalho.titulo }} - {{ trabalho.id }}</h1>
       <img :src="trabalho.imagem" :alt="trabalho.titulo" :key="trabalho.slug">
       <p>{{ trabalho.resumo }}</p>
+      <router-link :to="`/trabalhos/${trabalho.slug}`">{{ trabalho.titulo }}</router-link>
     </article>
   </div>
 </template>
