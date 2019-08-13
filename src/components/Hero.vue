@@ -1,13 +1,13 @@
 <template>
   <div>
-    <p>Componente Serviços</p>
+    <p>Componente Hero</p>
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'Service'
+  name: 'Hero'
 }
 </script>
 
