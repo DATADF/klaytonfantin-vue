@@ -1,10 +1,10 @@
 <template>
   <div class="trabalhos">
+      <h1>Página Job</h1>
     <article v-for="trabalho of trabalhos" :key="trabalho.id">
       <h1>{{ trabalho.titulo }} - {{ trabalho.id }}</h1>
-      <img :src="trabalho.imagem" :alt="trabalho.titulo" :key="trabalho.id">
-      <p>{{ trabalho.resumo }}</p>
-      <router-link :to="`/trabalhos/${trabalho.slug}`">{{ trabalho.titulo }}</router-link>
+      <img :src="trabalho.imagem" :alt="trabalho.titulo" :key="trabalho.slug">
+      <p>{{ trabalho.conteudo }}</p>
     </article>
   </div>
 </template>
