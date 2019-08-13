@@ -21,12 +21,11 @@ export default new Router({
       path: '/trabalhos',
       name: 'trabalhos',
       component: () => import(/* webpackChunkName: "trabalhos" */ './views/Trabalhos.vue')
-    }
-    ,
+    },
     {
       path: '/trabalhos/:slug',
-      name: 'job',
-      component: () => import(/* webpackChunkName: "trabalhos" */ './views/Job.vue')
+      name: 'Detalhe',
+      component: () => import(/* webpackChunkName: "trabalhos" */ './views/Detalhe.vue')
     }
   ]
 })
